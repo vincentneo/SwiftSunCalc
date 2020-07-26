@@ -8,12 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		122154D324CD5AB20077EC18 /* SwiftSunCalc.h in Headers */ = {isa = PBXBuildFile; fileRef = 122154D124CD5AB10077EC18 /* SwiftSunCalc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		122154DA24CD5AC30077EC18 /* SunCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154D924CD5AC30077EC18 /* SunCalc.swift */; };
+		122154EE24CD5D350077EC18 /* MoonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154E824CD5D350077EC18 /* MoonUtils.swift */; };
+		122154EF24CD5D350077EC18 /* SunUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154E924CD5D350077EC18 /* SunUtils.swift */; };
+		122154F024CD5D350077EC18 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154EA24CD5D350077EC18 /* TimeUtils.swift */; };
+		122154F124CD5D350077EC18 /* PositionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154EB24CD5D350077EC18 /* PositionUtils.swift */; };
+		122154F324CD5D350077EC18 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154ED24CD5D350077EC18 /* DateUtils.swift */; };
+		122154FA24CD5D430077EC18 /* EquatorialCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154F424CD5D430077EC18 /* EquatorialCoordinates.swift */; };
+		122154FB24CD5D430077EC18 /* MoonIllumination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154F524CD5D430077EC18 /* MoonIllumination.swift */; };
+		122154FC24CD5D430077EC18 /* SunPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154F624CD5D430077EC18 /* SunPosition.swift */; };
+		122154FD24CD5D430077EC18 /* MoonTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154F724CD5D430077EC18 /* MoonTimes.swift */; };
+		122154FE24CD5D430077EC18 /* MoonPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154F824CD5D430077EC18 /* MoonPosition.swift */; };
+		122154FF24CD5D430077EC18 /* GeocentricCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122154F924CD5D430077EC18 /* GeocentricCoordinates.swift */; };
+		1221550224CD64A20077EC18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221550124CD64A20077EC18 /* Constants.swift */; };
+		1221550424CD64E90077EC18 /* SunTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221550324CD64E90077EC18 /* SunTimes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		122154CE24CD5AB10077EC18 /* SwiftSunCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSunCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		122154CE24CD5AB10077EC18 /* SunCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SunCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		122154D124CD5AB10077EC18 /* SwiftSunCalc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftSunCalc.h; sourceTree = "<group>"; };
 		122154D224CD5AB20077EC18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		122154D924CD5AC30077EC18 /* SunCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunCalc.swift; sourceTree = "<group>"; };
+		122154E824CD5D350077EC18 /* MoonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonUtils.swift; sourceTree = "<group>"; };
+		122154E924CD5D350077EC18 /* SunUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunUtils.swift; sourceTree = "<group>"; };
+		122154EA24CD5D350077EC18 /* TimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		122154EB24CD5D350077EC18 /* PositionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionUtils.swift; sourceTree = "<group>"; };
+		122154ED24CD5D350077EC18 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		122154F424CD5D430077EC18 /* EquatorialCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatorialCoordinates.swift; sourceTree = "<group>"; };
+		122154F524CD5D430077EC18 /* MoonIllumination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonIllumination.swift; sourceTree = "<group>"; };
+		122154F624CD5D430077EC18 /* SunPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunPosition.swift; sourceTree = "<group>"; };
+		122154F724CD5D430077EC18 /* MoonTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonTimes.swift; sourceTree = "<group>"; };
+		122154F824CD5D430077EC18 /* MoonPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonPosition.swift; sourceTree = "<group>"; };
+		122154F924CD5D430077EC18 /* GeocentricCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocentricCoordinates.swift; sourceTree = "<group>"; };
+		1221550124CD64A20077EC18 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1221550324CD64E90077EC18 /* SunTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTimes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +66,7 @@
 		122154CF24CD5AB10077EC18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				122154CE24CD5AB10077EC18 /* SwiftSunCalc.framework */,
+				122154CE24CD5AB10077EC18 /* SunCalc.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +76,20 @@
 			children = (
 				122154D124CD5AB10077EC18 /* SwiftSunCalc.h */,
 				122154D224CD5AB20077EC18 /* Info.plist */,
+				1221550324CD64E90077EC18 /* SunTimes.swift */,
+				122154F624CD5D430077EC18 /* SunPosition.swift */,
+				122154F824CD5D430077EC18 /* MoonPosition.swift */,
+				122154F524CD5D430077EC18 /* MoonIllumination.swift */,
+				122154F724CD5D430077EC18 /* MoonTimes.swift */,
+				122154F924CD5D430077EC18 /* GeocentricCoordinates.swift */,
+				122154F424CD5D430077EC18 /* EquatorialCoordinates.swift */,
+				122154D924CD5AC30077EC18 /* SunCalc.swift */,
+				1221550124CD64A20077EC18 /* Constants.swift */,
+				122154ED24CD5D350077EC18 /* DateUtils.swift */,
+				122154E824CD5D350077EC18 /* MoonUtils.swift */,
+				122154EB24CD5D350077EC18 /* PositionUtils.swift */,
+				122154E924CD5D350077EC18 /* SunUtils.swift */,
+				122154EA24CD5D350077EC18 /* TimeUtils.swift */,
 			);
 			path = SwiftSunCalc;
 			sourceTree = "<group>";
@@ -74,6 +116,7 @@
 				122154CA24CD5AB10077EC18 /* Sources */,
 				122154CB24CD5AB10077EC18 /* Frameworks */,
 				122154CC24CD5AB10077EC18 /* Resources */,
+				1221550024CD5D7A0077EC18 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -81,7 +124,7 @@
 			);
 			name = SwiftSunCalc;
 			productName = SwiftSunCalc;
-			productReference = 122154CE24CD5AB10077EC18 /* SwiftSunCalc.framework */;
+			productReference = 122154CE24CD5AB10077EC18 /* SunCalc.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -95,6 +138,7 @@
 				TargetAttributes = {
 					122154CD24CD5AB10077EC18 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -126,11 +170,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1221550024CD5D7A0077EC18 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  echo \"swiftlint\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		122154CA24CD5AB10077EC18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1221550424CD64E90077EC18 /* SunTimes.swift in Sources */,
+				122154FA24CD5D430077EC18 /* EquatorialCoordinates.swift in Sources */,
+				122154EE24CD5D350077EC18 /* MoonUtils.swift in Sources */,
+				122154DA24CD5AC30077EC18 /* SunCalc.swift in Sources */,
+				122154FD24CD5D430077EC18 /* MoonTimes.swift in Sources */,
+				122154F024CD5D350077EC18 /* TimeUtils.swift in Sources */,
+				122154FB24CD5D430077EC18 /* MoonIllumination.swift in Sources */,
+				122154F124CD5D350077EC18 /* PositionUtils.swift in Sources */,
+				1221550224CD64A20077EC18 /* Constants.swift in Sources */,
+				122154FE24CD5D430077EC18 /* MoonPosition.swift in Sources */,
+				122154FF24CD5D430077EC18 /* GeocentricCoordinates.swift in Sources */,
+				122154F324CD5D350077EC18 /* DateUtils.swift in Sources */,
+				122154FC24CD5D430077EC18 /* SunPosition.swift in Sources */,
+				122154EF24CD5D350077EC18 /* SunUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +339,7 @@
 		122154D724CD5AB20077EC18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -273,8 +353,9 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vincent-neo.SwiftSunCalc";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SunCalc;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +364,7 @@
 		122154D824CD5AB20077EC18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -296,7 +378,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vincent-neo.SwiftSunCalc";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SunCalc;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
