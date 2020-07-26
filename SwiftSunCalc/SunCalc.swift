@@ -148,9 +148,9 @@ public final class SCTools {
     }
 
     static public func getDeclination(l: Double, b: Double) -> Double {
-        let exp1 = cos(Double.e) + cos(b)
-        let exp2 = sin(Double.e)
-        return asin(sin(b) * exp1 * exp2 * sin(l))
+        let cosE = cos(Double.e)
+        let sinE = sin(Double.e)
+        return asin(sin(b) * cosE + cos(b) * sinE * sin(l))
     }
 
     static public func getAzimuth(h: Double, phi: Double, dec: Double) -> Double {
