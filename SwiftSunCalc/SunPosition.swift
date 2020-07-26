@@ -14,12 +14,12 @@ public struct SunPosition {
 	public init(date: Date, latitude: Double, longitude: Double) {
         let lw: Double = Double.rad * -longitude
         let phi: Double = Double.rad * latitude
-        let d: Double = DateUtils.toDays(date: date)
+        let d: Double = SCTools.toDays(date: date)
 
-        let c: EquatorialCoordinates = SunUtils.getSunCoords(d: d)
-        let H: Double = PositionUtils.getSiderealTime(d: d, lw: lw) - c.rightAscension
+        let c: EquatorialCoordinates = SCTools.getSunCoords(d: d)
+        let H: Double = SCTools.getSiderealTime(d: d, lw: lw) - c.rightAscension
 
-        azimuth = PositionUtils.getAzimuth(h: H, phi: phi, dec: c.declination)
-        altitude = PositionUtils.getAltitude(h: H, phi: phi, dec: c.declination)
+        azimuth = SCTools.getAzimuth(h: H, phi: phi, dec: c.declination)
+        altitude = SCTools.getAltitude(h: H, phi: phi, dec: c.declination)
 	}
 }

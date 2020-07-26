@@ -8,6 +8,7 @@
 import Foundation
 
 public struct MoonTimes {
+
     public enum Horizon {
         case riseAndSets
         case alwaysAbove
@@ -18,7 +19,7 @@ public struct MoonTimes {
     public var set: Date?
     public var horizon: Horizon
 
-    init(date: Date, latitude: Double, longitude: Double) {
+    public init(date: Date, latitude: Double, longitude: Double) {
         let hc: Double = 0.133 * Double.rad
         let moonPosition = MoonPosition(date: date, latitude: latitude, longitude: longitude)
 
@@ -39,8 +40,8 @@ public struct MoonTimes {
 
         // go in 2-hour chunks, each time seeing if a 3-point quadratic curve crosses zero (which means rise or set)
         for i in stride(from: 1, through: 24, by: 2) {
-           h1 = SunCalc.getMoonPosition(from: DateUtils.getHoursLater(date: date, hours: Double(i))!, latitude: latitude, longitude: longitude).altitude - hc
-           h2 = SunCalc.getMoonPosition(from: DateUtils.getHoursLater(date: date, hours: Double(i + 1))!, latitude: latitude, longitude: longitude).altitude - hc
+           h1 = SunCalc.getMoonPosition(from: SCTools.getHoursLater(date: date, hours: Double(i))!, latitude: latitude, longitude: longitude).altitude - hc
+           h2 = SunCalc.getMoonPosition(from: SCTools.getHoursLater(date: date, hours: Double(i + 1))!, latitude: latitude, longitude: longitude).altitude - hc
            a = (h0 + h2) / 2 - h1
            b = (h2 - h0) / 2
            xe = -b / (2 * a)
@@ -83,8 +84,8 @@ public struct MoonTimes {
             horizon = ye > 0 ? .alwaysAbove : .alwaysBelow
         } else {
             horizon = .riseAndSets
-            self.rise = DateUtils.getHoursLater(date: date, hours: rise)
-            self.set = DateUtils.getHoursLater(date: date, hours: set)
+            self.rise = SCTools.getHoursLater(date: date, hours: rise)
+            self.set = SCTools.getHoursLater(date: date, hours: set)
         }
     }
 }

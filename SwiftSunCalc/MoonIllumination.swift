@@ -8,14 +8,14 @@
 import Foundation
 
 public struct MoonIllumination {
-	var fraction: Double
-	var phase: Double
-	var angle: Double
+	public var fraction: Double
+	public var phase: Double
+	public var angle: Double
 
-	init(date: Date) {
-        let d: Double = DateUtils.toDays(date: date)
-        let s: EquatorialCoordinates = SunUtils.getSunCoords(d: d)
-        let m: GeocentricCoordinates = MoonUtils.getMoonCoords(d: d)
+	public init(date: Date) {
+        let d: Double = SCTools.toDays(date: date)
+        let s: EquatorialCoordinates = SCTools.getSunCoords(d: d)
+        let m: GeocentricCoordinates = SCTools.getMoonCoords(d: d)
 
         let sdist: Double = 149598000; // distance from Earth to Sun in km
 
