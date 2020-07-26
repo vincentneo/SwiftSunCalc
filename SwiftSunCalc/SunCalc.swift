@@ -13,8 +13,8 @@ import Foundation
 // MARK:- Constants
 private let dayInSeconds = 86400.0
 private let J0 = 0.0009
-private let J1970 = 2440587.5
-private let J2000 = 2451545.25
+private let J1970: Double = 2440588
+private let J2000: Double = 2451545
 
 // MARK:- SunCalc
 
